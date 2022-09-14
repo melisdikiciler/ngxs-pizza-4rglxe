@@ -23,12 +23,15 @@ export class AppComponent {
 
   hasOlive$ = this.store.select(PizzaState.hasTopping(Topping.Olive));
 
+  hasOnion$ = this.store.select(PizzaState.hasTopping(Topping.Onion));
+
   hasPepperoni$ = this.store.select(PizzaState.hasTopping(Topping.Pepperoni));
 
   toppings: { [key: string]: Topping } = {
     pepperoni: Topping.Pepperoni,
     mushroom: Topping.Mushroom,
     olive: Topping.Olive,
+    onion: Topping.Onion,
   };
 
   constructor(private store: Store) {}

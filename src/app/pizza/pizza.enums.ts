@@ -1,5 +1,6 @@
 export const enum Topping {
   Pepperoni = 'pepperoni',
   Mushroom = 'mushroom',
-  Olive = 'olive'
-};
+  Olive = 'olive',
+  Onion = 'onion',
+}
